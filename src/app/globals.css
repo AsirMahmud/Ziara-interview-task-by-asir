@@ -13,7 +13,17 @@
     --foreground: #ededed;
   }
 }
+@font-face {
+  font-family: "Airnb"; /* The name you'll use in Tailwind */
+  src: url("/airnb.otf") format("opentype"); /* Fixed format */
+  font-weight: 400; /* Normal weight */
+  font-style: normal; /* Normal style */
+}
 
+html {
+  font-family: "Airnb", sans-serif;
+  background-color: #0c0c0c; /* Use Tailwind classes in HTML instead */
+}
 body {
   color: var(--foreground);
   background: var(--background);
